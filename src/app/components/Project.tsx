@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
@@ -66,7 +65,7 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
+  const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
 
