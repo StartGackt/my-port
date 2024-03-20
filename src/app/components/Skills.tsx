@@ -37,7 +37,7 @@ const Skills = () => {
               <p className="font-medium mb-5 text-[#16f2b3] text-xl lg:text-2xl uppercase">
                Skills
               </p>
-              <div className="relative z-50 border-t my-12 lg:my-20 border-[#25213b]">
+              <div className="relative z-50 border-t my-12 lg:my-20 border-[#25213b] ">
                 <div className="w-full my-12">
                   <Marquee
                     gradient={false}

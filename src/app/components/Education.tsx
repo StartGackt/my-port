@@ -1,6 +1,6 @@
 import React from 'react';
-import AnimationLottie from "./helper/animation-lottie";
-import lottieFile from "../../../public/lottie/education.json";
+//import AnimationLottie from "./helper/animation-lottie";
+//import lottieFile from "../../../public/lottie/education.json";
 import GlowCard from "./helper/glow-card";
 import { BsPersonWorkspace } from "react-icons/bs";
 import Image from "next/image";
@@ -53,9 +53,8 @@ const Education = () => {
                                 <div className="py-8">
                                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
                                         <div className="flex justify-center items-start">
-                                            <div className="w-3/4 h-3/4">
-                                                <AnimationLottie animationPath={lottieFile} />
-                                            </div>
+                                            {/*<AnimationLottie animationPath={lottieFile} width={100} />*/}
+                                            <Image src={"/images/education.png"} alt="Education" width={100} height={100} />
                                         </div>
                                         <div>
                                             <div className="flex flex-col gap-6  ">

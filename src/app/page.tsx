@@ -5,23 +5,11 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
+import Project from "./components/Project";
+import Email from "./components/Email";
 
 
-async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
-
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
-
-  const data = await res.json();
-
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-
-  return filtered;
-};
-
-export default async function Home() {
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212] ">
       <Navbar />
@@ -30,9 +18,11 @@ export default async function Home() {
         <About />
         <Education />
         <Skills />
-
+        <Project />
+        <Email />
       </div>
       <Footer />
+        
     </main>
   );
 }

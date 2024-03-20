@@ -23,35 +23,35 @@ const HeroSection = () => {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={[
-                "Thestart",
-                1000,
-                "Software Engineer",
-                1000,
-                "Ai Developer",
-                1000,
-                "Data Scientist",
-                1000,
-                "Cyber Security",
-                1000,
-              ]}
-              wrapper="span"
-              speed={8}
-              repeat={Infinity}
-              style={{ 
-  fontSize: "1em", 
-  display: "inline-block", 
-  background: "linear-gradient(105.7deg, rgb(0, 238, 179) 23.2%, rgb(49, 100, 255) 100.5%)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent" 
-}}
+  sequence={[
+    "Thestart",
+    1000,
+    "Software Engineer",
+    1000,
+    "Ai Developer",
+    1000,
+    "Data Scientist",
+    1000,
+    "Cyber Security",
+    1000,
+  ]}
+  wrapper="span"
+  speed={8}
+  repeat={Infinity}
+  style={{ 
+    fontSize: "1em", 
+    display: "inline-block", 
+    background: "linear-gradient(105.7deg, rgb(0, 238, 179) 23.2%, rgb(49, 100, 255) 100.5%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent" 
+  }}
+/>
 
-            />
           </h1>
           <p className="text-base sm:text-lg mb-6 lg:text-xl text-3xl font-bold leading-10">
   <span className="text-[#ecebeb]">Hello,</span>
   <span className="text-[#16f2b3]"> This is Thestart ,</span>
-  <span className="text-[#dfdfe4]"> I'm a Professional </span>
+  <span className="text-[#dfdfe4]"> Im a Professional </span>
   <span className="text-[#16f2b3]">  Software Developer.</span>
 </p>
 
@@ -80,15 +80,18 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
       <div className="col-span-4 place-self-center mt-4 rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative overflow-hidden">
-  <img
-    src="/images/hero-image.jpg"
-    alt="hero image"
-    className="rounded-full absolute inset-0 w-full h-full object-cover transition-transform duration-500 cursor-pointer"
-    style={{
-      transform: 'rotate(-10deg)', // กำหนดมุมการหมุนเริ่มต้น
-      animation: 'moveUp 2s infinite alternate', // เพิ่ม animation เรียกว่า moveUp ที่เคลื่อนไหวบนแนวแกน Y สลับไปมา
-    }}
-  />
+      <Image
+  src="/images/hero-image.jpg"
+  alt="hero image"
+  width={250} // Add width property
+  height={250} // Add height property
+  className="rounded-full absolute inset-0 w-full h-full object-cover transition-transform duration-500 cursor-pointer"
+  style={{
+    transform: 'rotate(-10deg)', // Initial rotation
+    animation: 'moveUp 2s infinite alternate', // Animation
+  }}
+/>
+
   <style jsx>{`
     @keyframes moveUp {
       from {
