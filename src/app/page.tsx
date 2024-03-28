@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
-import Project from "./components/Project";
+
 import Email from "./components/Email";
 
 
@@ -18,7 +18,7 @@ export default function Home() {
         <About />
         <Education />
         <Skills />
-        <Project />
+       
         <Email />
       </div>
       <Footer />
